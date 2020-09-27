@@ -35,3 +35,30 @@
 
 (format t "(expt 4 2) = ~d ~%" (expt 4 2))
 
+(defparameter *name* 'Marc')
+
+(format t "(eq *name* 'Marc) = ~d ~%" (eq *name* 'Marc))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
