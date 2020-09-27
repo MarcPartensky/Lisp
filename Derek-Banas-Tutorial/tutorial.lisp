@@ -60,6 +60,9 @@
   (format t "You can't vote ~%"))
 
 
+(if (and (<= *age* 15) (>= *age* 78))
+  (format t "fdp")
+  (format t "yeah"))
 
 
 
