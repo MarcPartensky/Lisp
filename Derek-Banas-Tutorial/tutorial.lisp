@@ -20,13 +20,18 @@
 ;;; ~10a : Adds 10 spaces for the value with extra space
 ;;; ~10@a : Adds 10 spaces for the value with extra space
 
+;Maths 
 ;(+ 5 4) = 9
 ;(+ 5 (-6 2)) = 9
 
 ;[+] [5] [4] [nil]
 
-
-(format t "number with commas ~:d" 1000000)
-
+;(format t "number with commas ~:d" 1000000)
 ;(format t "10 dollars ~$ ~% 10")
-(format t "(+ 5 4) = ~d ~%" (+ 5 4))
+;(format t "(+ 5 4) = ~d ~%" (+ 5 4))
+;(format t "(/ 5 4.0) = ~d ~%" (/ 5 4.0))
+;(format t "(mod 5 4) = ~d ~%" (mod 5 4))
+;(format t "(rem 5 4) = ~d ~%" (rem 5 4))
+
+(format t "(expt 4 2) = ~d ~%" (expt 4 2))
+
