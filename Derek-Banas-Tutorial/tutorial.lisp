@@ -33,11 +33,35 @@
 ;(format t "(mod 5 4) = ~d ~%" (mod 5 4))
 ;(format t "(rem 5 4) = ~d ~%" (rem 5 4))
 
-(format t "(expt 4 2) = ~d ~%" (expt 4 2))
+;(format t "(expt 4 2) = ~d ~%" (expt 4 2))
 
-(defparameter *name* 'Marc')
+(defparameter *name* 'Marc)
 
 (format t "(eq *name* 'Marc) = ~d ~%" (eq *name* 'Marc))
+
+(format t "(equal 10 10) = ~d ~%" (equal 10 10))
+
+(format t "(equal \"string\" \"String\") = ~d ~%"
+    (equal "string" "String"))
+
+(format t "(equal (list 1 2 3) (list 1 2 3)) = ~d ~%"
+    (equal (list 1 2 3) (list 1 2 3)))
+
+;(format t *name*)
+
+(format t "(equalp \"string\" \"String\") = ~d ~%"
+    (equalp "string" "String"))
+
+(defvar *age* 20)
+;> < >= <= =
+
+(if (not (< *age* 18))
+  (format t "You can vote ~%")
+  (format t "You can't vote ~%"))
+
+
+
+
 
 
 
