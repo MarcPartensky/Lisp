@@ -29,3 +29,4 @@
 (format t "number with commas ~:d" 1000000)
 
 ;(format t "10 dollars ~$ ~% 10")
+(format t "(+ 5 4) = ~d ~%" (+ 5 4))
