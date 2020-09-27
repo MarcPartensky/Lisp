@@ -35,41 +35,82 @@
 
 ;(format t "(expt 4 2) = ~d ~%" (expt 4 2))
 
-(defparameter *name* 'Marc)
+;(defparameter *name* 'Marc)
 
-(format t "(eq *name* 'Marc) = ~d ~%" (eq *name* 'Marc))
+;(format t "(eq *name* 'Marc) = ~d ~%" (eq *name* 'Marc))
 
-(format t "(equal 10 10) = ~d ~%" (equal 10 10))
+;(format t "(equal 10 10) = ~d ~%" (equal 10 10))
 
-(format t "(equal \"string\" \"String\") = ~d ~%"
-    (equal "string" "String"))
+;(format t "(equal \"string\" \"String\") = ~d ~%"
+    ;(equal "string" "String"))
 
-(format t "(equal (list 1 2 3) (list 1 2 3)) = ~d ~%"
-    (equal (list 1 2 3) (list 1 2 3)))
+;(format t "(equal (list 1 2 3) (list 1 2 3)) = ~d ~%"
+    ;(equal (list 1 2 3) (list 1 2 3)))
 
-;(format t *name*)
+;;(format t *name*)
 
-(format t "(equalp \"string\" \"String\") = ~d ~%"
-    (equalp "string" "String"))
+;(format t "(equalp \"string\" \"String\") = ~d ~%"
+    ;(equalp "string" "String"))
 
-(defvar *age* 20)
-;> < >= <= =
+;(defvar *age* 20)
+;;Operators: > < >= <= =
 
-(if (not (< *age* 18))
-  (format t "You can vote ~%")
-  (format t "You can't vote ~%"))
-
-
-(if (and (<= *age* 15) (>= *age* 78))
-  (format t "fdp")
-  (format t "yeah"))
+;(if (not (< *age* 18))
+  ;(format t "You can vote ~%")
+  ;(format t "You can't vote ~%"))
 
 
+;(if (and (<= *age* 15) (>= *age* 78))
+  ;(format t "fdp")
+  ;(format t "yeah"))
 
+;(defvar *num* 2)
+;(defvar *num-2* 2)
+;(defvar *num-3* 2)
 
+;(if (= *num* 2)
+  ;(progn
+    ;(setf *num-2* (* *num-2* 2))
+    ;(setf *num-3* (* *num-3* 3))
+    ;)
+  ;(format t "Not equal")
+;)
 
+;(defvar *age* 5)
 
+;(defun get-school (age)
+  ;(case age
+    ;(5 (print "Kindergarten"))
+    ;(6 (print "first grade"))
+    ;(otherwise (print "middle school")) 
+;))
 
+;(get-school *age*)
+
+;(terpri)
+
+;(when (= *age* 18)
+  ;(setf *num-3* 18)
+  ;(format t "go to college you're ~d ~%" *num-3*)
+;)
+
+;(unless (not (= *age* 18))
+  ;(setf *num-3* 18)
+  ;(format t "go to college you're ~d ~%" *num-3*)
+;)
+
+;(defvar *age* 18)
+;(defvar *num-3* 5)
+;(defvar *college-read* nil)
+;(cond ( (>= *age* 18)
+       ;(setf *college-ready* 'yes)
+       ;(format t "ready for college ~%"))
+      ;((< *age* 18)
+       ;(setf *college-ready* 'no)
+ ;))
+
+(loop for x from 1 to 10 
+      do (print x))
 
 
 
