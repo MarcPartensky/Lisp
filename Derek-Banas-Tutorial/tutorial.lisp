@@ -109,11 +109,15 @@
        ;(setf *college-ready* 'no)
  ;))
 
-(loop for x from 1 to 10 
-      do (print x))
+(setq x 1)
+;(loop for x from 1 to 10 
+      ;do (print x))
 
 
-
+(loop
+  (format t "~d ~%" x)
+  (setq x (+ x 1))
+  )
 
 
 
